@@ -1,7 +1,6 @@
 import random
 
 #======ENCODER & DECODER======
-
 def EncodePacket(bit,basis):
   qubit = [bit,basis] #qubit to be sent
   qubitC = [bit,0] #qubit in C-basis
