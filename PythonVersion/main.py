@@ -41,7 +41,7 @@ inconclusive = 0
 totalTests = 1000000 #sending a stream of 1000000 test packets
 
 #======TESTS======
-for _ in range(totalTests):
+for _ in range(totalTests): #starting packet stream
 
   #======ALICE======
   bit = random.choice([0,1])
