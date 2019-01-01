@@ -3,6 +3,6 @@
 ### Script Output
 
 ```
-There were 374921 successful and 625079 inconclusive
-Success rate: 37.4921%
+There were 250015 successful and 749985 inconclusive
+Success rate: 25.0015%
 ```
