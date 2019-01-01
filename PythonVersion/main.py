@@ -33,12 +33,12 @@ def DecodePacket(packet,basis):
     if measureQubit!=qubitH:
       return 0
     else:
-      return -0 #Trying to deduce the basis from the measurement and the bits Alice sent. Returning -1 means inconclusive
+      return -1 #Trying to deduce the basis from the measurement and the bits Alice sent. Returning -1 means inconclusive.
 
 #======STATISTICS======
 success = 0
 inconclusive = 0
-totalTests = 1000000
+totalTests = 1000000 #sending a stream of 1000000 test packets
 
 #======TESTS======
 for _ in range(totalTests):
