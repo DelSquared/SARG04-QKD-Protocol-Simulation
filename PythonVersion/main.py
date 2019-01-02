@@ -37,7 +37,7 @@ def DecodePacket(packet,basis):
       return -1
     #Trying to deduce the basis from the measurement and the bits Alice sent. Returning -1 means inconclusive.
     #This check could be done more efficiently using bit flipping such as basis=(basis+1)%2 or a bitwise-NOT.
-    #This way is easier to understand
+    #This way is more readable
 
 #======STATISTICS======
 success = 0
