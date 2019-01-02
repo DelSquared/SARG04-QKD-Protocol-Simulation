@@ -22,7 +22,8 @@ def DecodePacket(packet,basis):
     if qubit[1]==1:
       measureQubit=qubit
     if qubit[1]==0:
-      measureQubit=random.choice([[1,1],[0,1]]) #simulation of measuring qubit
+      measureQubit=random.choice([[1,1],[0,1]]) 
+    #simulation of measuring qubit
 
   if basis==0:
     if measureQubit!=qubitC:
@@ -33,7 +34,10 @@ def DecodePacket(packet,basis):
     if measureQubit!=qubitH:
       return 0
     else:
-      return -1 #Trying to deduce the basis from the measurement and the bits Alice sent. Returning -1 means inconclusive.
+      return -1
+    #Trying to deduce the basis from the measurement and the bits Alice sent. Returning -1 means inconclusive.
+    #This check could be done more efficiently using bit flipping such as basis=(basis+1)%2 or a bitwise-NOT.
+    #This way is easier to understand
 
 #======STATISTICS======
 success = 0
