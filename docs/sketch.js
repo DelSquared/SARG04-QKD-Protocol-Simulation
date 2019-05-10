@@ -105,7 +105,7 @@ function setup() {
   eff.html("Efficiency = 0%");
   keyDisp.html("Key =  "+key);
 
-  time = createSlider(25, 750, 500);
+  time = createSlider(25, 750, 100);
   time.position(10,10);
   time.style('width', '500px');
 }
